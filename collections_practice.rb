@@ -79,13 +79,13 @@ end
 def organize_schools(schools)
   new_hash = {}
   schools.each {|place|
-  if new_hash.has_key?(schools[place][:location])
-    binding.pry
-    new_hash[location] << schools[place]
-  else
-    location = schools[place][:location]
-    new_hash[location] = []
-  end
+    if new_hash.has_key?(place[1][:location])
+      location = place[1][:location]
+      new_hash[location].push(place[0])
+    else
+      location = place[1][:location]
+      new_hash[location] = [place[0]]
+    end
   }
   new_hash
 end
