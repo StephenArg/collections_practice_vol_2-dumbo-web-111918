@@ -50,6 +50,7 @@ def count_elements(array)
 end
 
 def merge_data(keys, items)
+  binding.pry
   merged = keys.merge(items)
   merged
 end
