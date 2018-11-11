@@ -1,3 +1,5 @@
+require 'pry'
+
 def begins_with_r(array)
   yes = true
   array.each {|i|
