@@ -54,5 +54,13 @@ end
 def merge_data(keys, items)
   list = []
   keys.each {|what|
-  binding.pry}
+    name = what[:first_name]
+    items.each {|yes|
+    if yes[name]
+      merged_hash = yes[name]
+      merged_hash[:first_name] = name
+      list.push(merged_hash)
+      }
+  }
+  list
 end
