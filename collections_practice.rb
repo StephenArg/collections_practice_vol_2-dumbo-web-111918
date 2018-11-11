@@ -60,6 +60,7 @@ def merge_data(keys, items)
       merged_hash = yes[name]
       merged_hash[:first_name] = name
       list.push(merged_hash)
+    end
       }
   }
   list
