@@ -77,6 +77,14 @@ def find_cool(cool)
 end
 
 def organize_schools(schools)
-  binding.pry
+  new_hash = {}
+  schools.each {|place|
+  if schools[place][:location] not in new_hash
+    location = schools[place][:location] 
+    new_hash[location] = []
+  else
+    new_hash[location] << schools[place]
+  end
+  }
   return schools
 end
