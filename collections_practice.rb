@@ -57,6 +57,7 @@ def merge_data(keys, items)
   items.each {|key, nested|
     list.push(nested)
     list[count][:first_name] = key
+    binding.pry
     count += 1}
   list
 end
