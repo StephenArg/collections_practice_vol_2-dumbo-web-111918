@@ -76,7 +76,7 @@ def find_cool(cool)
   list
 end
 
-def organized_schools(schools)
+def organize_schools(schools)
   schools.sort {|a, b|
     a <=> b
   }
