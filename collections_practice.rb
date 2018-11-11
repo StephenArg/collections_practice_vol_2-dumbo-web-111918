@@ -65,3 +65,13 @@ def merge_data(keys, items)
   }
   list
 end
+
+def find_cool(cool)
+  list = []
+  cool.each { |thing|
+  if thing[:temperature] == "cool"
+    list.push(thing)
+  end
+  }
+  list
+end
