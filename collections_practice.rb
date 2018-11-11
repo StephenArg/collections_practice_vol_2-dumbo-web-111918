@@ -34,7 +34,7 @@ def remove_non_strings(array)
   return list
 end
 
-def count_elements(array) #####
+def count_elements(array)
   list = []
   holder = {}
   array.each {|i|
