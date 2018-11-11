@@ -75,3 +75,9 @@ def find_cool(cool)
   }
   list
 end
+
+def organized_schools(schools)
+  schools.sort {|a, b|
+    a <=> b
+  }
+  return schools
