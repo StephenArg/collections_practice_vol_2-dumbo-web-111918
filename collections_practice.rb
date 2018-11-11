@@ -44,7 +44,7 @@ def count_elements(array) #####
     holder[i] = 1
   end}
   holder.each {|name, count|
-    list.push({name: name, count: count})
+    list.push({name, count: count})
   }
   return list
 end
