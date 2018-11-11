@@ -81,3 +81,4 @@ def organized_schools(schools)
     a <=> b
   }
   return schools
+end
