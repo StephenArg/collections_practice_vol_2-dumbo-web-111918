@@ -53,7 +53,6 @@ end
 
 def merge_data(keys, items)
   list = []
-  items.collect {|key, item|
-  list.push(item)
+  keys.each {|what|
   binding.pry}
 end
