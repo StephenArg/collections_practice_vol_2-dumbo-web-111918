@@ -79,11 +79,11 @@ end
 def organize_schools(schools)
   new_hash = {}
   schools.each {|place|
-  if schools[place][:location] not in new_hash
+  if schools[place][:location] in new_hash
+    new_hash[location] << schools[place]
+  else
     location = schools[place][:location]
     new_hash[location] = []
-  else
-    new_hash[location] << schools[place]
   end
   }
   new_hash
