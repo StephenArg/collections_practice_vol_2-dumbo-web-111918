@@ -38,10 +38,10 @@ def count_elements(array) #####
   list = []
   holder = {}
   array.each {|i|
-  if holder.has_key?(i)
-    holder[i] += 1
+  if holder.has_key?(i[:name])
+    holder[i[:name]] += 1
   else
-    holder[i] = 1
+    holder[i[:name]] = 1
   end}
   holder.each {|name, count|
     list.push({name: name, count: count})
