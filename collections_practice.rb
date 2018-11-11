@@ -49,7 +49,12 @@ def count_elements(array)
   return list
 end
 
-def merge_data(keys, items)####
-  puts keys, items
-  return merged
+def merge_data(keys, items)
+  merged = {}
+  count = 0
+  while count < keys.length
+    merged[keys[count]] = items[count]
+    count += 1
+  end
+  merged
 end
